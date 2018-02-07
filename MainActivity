@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
         Log.w("onCreate", "color set **********");
 
     }
+    
+    /* As an alternative you can change the entire app background color by replacing the "View v" parameter with 
+    * "RelativeLayout r" and in the textChangerHandler replace "View colored_label = findViewById(R.id.colored_label)"
+    * with "RelativeLayout lLayout = (RelativeLayout) findViewById(R.id.background_id);"
+    * However, don't forget to create the id in activity_main.xml
+    */
 
     protected void setBackColor(int redVal, int greenVal, int blueVal, View v) {
         String outStr1 = String.format("red: %d, green: %d, blue: %d",redVal,greenVal,blueVal);
