@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anjuli.kaj_hw1.MainActivity">
+
+
+    <!-- Red value box -->
+    <TextView
+        android:id="@+id/redValueLabel"
+        style="@style/LabelStyle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:minWidth="120dp"
+        android:text="@string/redValue"
+        />
+    <EditText
+        android:id="@+id/redValue"
+        style="@style/InputStyle"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/redValueLabel"
+        android:layout_alignBottom="@+id/redValueLabel"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:inputType="number"
+        />
+
+    <!-- Green value box -->
+    <TextView
+        android:id="@+id/greenValueLabel"
+        style="@style/LabelStyle"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/redValueLabel"
+        android:layout_alignLeft="@+id/redValueLabel"
+        android:layout_alignRight="@+id/redValueLabel"
+        android:text="@string/greenValue"
+        />
+
+    <EditText
+        android:id="@+id/greenValue"
+        style="@style/InputStyle"
+        android:layout_toRightOf="@+id/greenValueLabel"
+        android:layout_alignBottom="@+id/greenValueLabel"
+        android:layout_alignRight="@+id/redValue"
+        android:text="0"
+        android:inputType="number"
+        />
+
+    <!-- Blue value box -->
+    <TextView
+        android:id="@+id/blueValueLabel"
+        style="@style/LabelStyle"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/greenValueLabel"
+        android:layout_alignLeft="@+id/greenValueLabel"
+        android:layout_alignRight="@id/greenValueLabel"
+        android:text="@string/blueValue"
+        />
+
+    <EditText
+        android:id="@+id/blueValue"
+        style="@style/InputStyle"
+        android:layout_toRightOf="@+id/blueValueLabel"
+        android:layout_alignBottom="@+id/blueValueLabel"
+        android:layout_alignRight="@+id/greenValue"
+        android:text="0"
+        android:inputType="number"
+        />
+
+    <!-- Label -->
+    <!--color changer background -->
+    <!-- android:background="#C0C0C0"-->
+    <!--android:hint="@string/hint" -->
+
+    <View
+        android:id="@+id/colored_label"
+        android:layout_width="245dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/blueValueLabel"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+</RelativeLayout>
+
