@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Color Changer Ch.2 #24</string>
+    <string name="redValue">Red Value</string>
+    <string name="greenValue">Green Value</string>
+    <string name="blueValue">Blue Value</string>
+    <string name="hint">Enter a numeric value</string>
+    <string name="button_changeColor">Change color</string>
+</resources>
