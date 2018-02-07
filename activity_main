@@ -4,7 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0C0C0"
     tools:context="com.example.anjuli.kaj_hw1.MainActivity">
+    
+    
+    <!-- If you want to change the entire apps background color add the lines below
+        android:id="@+id/background_id"
+
+    -->
 
 
     <!-- Red value box -->
